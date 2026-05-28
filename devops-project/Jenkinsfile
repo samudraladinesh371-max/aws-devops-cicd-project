@@ -5,13 +5,15 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/samudraladinesh371-max/Automated-ci-cd-deployment-using-jenkins-and-docker'
+                git 'https://github.com/samudraladinesh371-max/flask-devops-app'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t flask-devops-app .'
+                dir('devops-project') {
+                    sh 'docker build -t flask-devops-app .'
+                }
             }
         }
 
