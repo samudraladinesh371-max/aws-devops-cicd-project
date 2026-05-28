@@ -1,6 +1,9 @@
-From flask import flask
+from flask import Flask
 
-name=Flask(__name__)
-@app.route("/"):
-    return "Devops CI/CD PROJECT SUCCESSFULLY RUNNING"
-app.run(hos="0.0.0.0/0" port=5000)
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Dinesh DevOps CI/CD PROJECT SUCCESSFULLY RUNNING"
+
+app.run(host="0.0.0.0", port=5000)
