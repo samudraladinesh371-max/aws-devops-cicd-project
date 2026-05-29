@@ -1,15 +1,16 @@
-Automated CI/CD Deployment Using Jenkins and Docker on AWS
+Automated CI/CD Deployment Using Jenkins and Docker 
 
 Project Overview
 
 This project demonstrates a complete CI/CD pipeline deployment using:
 
-AWS EC2
+
 Jenkins
 Docker
 GitHub
 Python Flask Application
 Terraform (Infrastructure Provisioning)
+AWS EC2 infrastructure was provisioned separately using Terraform
 
 The pipeline automatically:
 
